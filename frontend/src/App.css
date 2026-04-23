@@ -1,0 +1,367 @@
+/* ===== Global Styles ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* ===== Auth Pages ===== */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.auth-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.auth-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.auth-logo .logo-icon {
+  font-size: 50px;
+  color: #667eea;
+}
+
+.auth-logo h2 {
+  color: #333;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.auth-logo p {
+  color: #888;
+  font-size: 14px;
+}
+
+.auth-card .form-control {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 12px 15px;
+  transition: all 0.3s;
+  font-size: 15px;
+}
+
+.auth-card .form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.auth-card label {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.btn-auth {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  margin-top: 10px;
+}
+
+.btn-auth:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+
+.auth-switch a {
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Navbar ===== */
+.navbar-custom {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 12px 0;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+}
+
+.navbar-custom .navbar-brand {
+  color: white !important;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar-custom .nav-user {
+  color: rgba(255,255,255,0.85);
+  font-size: 15px;
+}
+
+.btn-logout {
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.4);
+  color: white;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-logout:hover {
+  background: white;
+  color: #764ba2;
+}
+
+/* ===== Dashboard ===== */
+.dashboard-main {
+  padding: 30px 0;
+  min-height: calc(100vh - 66px);
+}
+
+/* ===== Item Cards ===== */
+.item-card {
+  background: white;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.item-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.item-card .card-header-custom {
+  padding: 12px 18px;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+}
+
+.item-card .card-header-custom.lost {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+}
+
+.item-card .card-header-custom.found {
+  background: linear-gradient(135deg, #1dd1a1, #10ac84);
+}
+
+.item-card .card-body {
+  padding: 16px 18px;
+}
+
+.item-card .item-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+.item-card .item-meta {
+  font-size: 13px;
+  color: #718096;
+  margin-bottom: 4px;
+}
+
+.item-card .item-meta i {
+  width: 16px;
+}
+
+.badge-lost {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-found {
+  background: linear-gradient(135deg, #1dd1a1, #10ac84);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ===== Forms ===== */
+.form-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+.form-card h5 {
+  color: #667eea;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f0f4f8;
+}
+
+.form-card .form-control,
+.form-card .form-select {
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: border-color 0.3s;
+}
+
+.form-card .form-control:focus,
+.form-card .form-select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.2);
+}
+
+.form-card label {
+  font-weight: 600;
+  color: #555;
+  font-size: 14px;
+}
+
+/* ===== Buttons ===== */
+.btn-primary-custom {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  padding: 10px 22px;
+  transition: opacity 0.3s;
+}
+
+.btn-primary-custom:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+/* ===== Search Bar ===== */
+.search-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+.search-section h5 {
+  color: #667eea;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* ===== Alerts ===== */
+.alert {
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+}
+
+/* ===== Stats Cards ===== */
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.stat-card .stat-number {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.stat-card .stat-label {
+  color: #718096;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.stat-card.total .stat-number { color: #667eea; }
+.stat-card.lost .stat-number { color: #ee5a24; }
+.stat-card.found .stat-number { color: #10ac84; }
+
+/* ===== Empty State ===== */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #a0aec0;
+}
+
+.empty-state i {
+  font-size: 60px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* ===== Owner actions ===== */
+.owner-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f4f8;
+}
+
+/* ===== Spinner ===== */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+/* ===== Modal tweak ===== */
+.modal-content {
+  border-radius: 14px;
+  border: none;
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 14px 14px 0 0;
+}
+
+.modal-header .btn-close {
+  filter: invert(1);
+}
